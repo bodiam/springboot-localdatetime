@@ -38,6 +38,7 @@ class DateTimeControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().json("{'localDate':'06-02-2019'}"))
                 .andExpect(content().json("{'localDateTime':'2019-02-06 03:45'}"))
+                .andExpect(content().json("{'localDateTimeFormatted':'2019-02-06'}"))
                 .andExpect(content().json("{'localTime':'03:45'}"));
 
     }
