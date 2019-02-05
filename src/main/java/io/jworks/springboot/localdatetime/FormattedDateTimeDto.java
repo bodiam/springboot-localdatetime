@@ -3,11 +3,16 @@ package io.jworks.springboot.localdatetime;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import java.time.Clock;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 public class FormattedDateTimeDto extends DateTimeDto {
+
+    public FormattedDateTimeDto(Clock clock) {
+        super(clock);
+    }
 
     @Override
     @JsonFormat(pattern="dd-MM-yyyy")
