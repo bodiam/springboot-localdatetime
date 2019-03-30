@@ -1,3 +1,5 @@
 = Formatting Spring Boot Java 8 Time JSON
 
 This project demonstrates how to format Java 8 Time API in a Spring Boot application.
+
+See https://www.jworks.io/formatting-java-8-localdatetime-in-json-with-spring-boot/ for the accompanying blogpost.
